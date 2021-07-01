@@ -1,4 +1,4 @@
-# Tokyo React Personal Portfolio Template
+# Ingyu Oh Website
 
 ## Description
 Setup Procedure
