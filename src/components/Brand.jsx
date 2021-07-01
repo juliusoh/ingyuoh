@@ -31,15 +31,15 @@ export default function SimpleSlider() {
     <ul>
       <Slider {...settings}>
         <li className="item">
-          <a href="https://iwahs.org/" target="_blank" rel="noreferrer"><img src="assets/img/partners/iwahs.png" alt="partners brand" /></a>
+          <a href="https://iwahs.org/" target="_blank" rel="noreferrer"><img src="assets/img/partners/iwahs.PNG" alt="partners brand" /></a>
 
         </li>
         <li className="item">
-        <a href="https://iwahs.org/" target="_blank" rel="noreferrer"><img src="assets/img/partners/asia.png" alt="partners brand" /></a>
+        <a href="https://iwahs.org/" target="_blank" rel="noreferrer"><img src="assets/img/partners/asia.PNG" alt="partners brand" /></a>
 
         </li>
         <li className="item">
-        <a href="https://iwahs.org/" target="_blank" rel="noreferrer"><img src="assets/img/partners/culture.png" alt="partners brand" /></a>
+        <a href="https://iwahs.org/" target="_blank" rel="noreferrer"><img src="assets/img/partners/culture.PNG" alt="partners brand" /></a>
 
         </li>
 
