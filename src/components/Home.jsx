@@ -11,7 +11,7 @@ const Home = () => {
             <div
               className="image avatar_img"
               style={{
-                backgroundImage: "url(assets/img/slider/ingyu3.jpg)",
+                backgroundImage: "url(assets/img/slider/ingyumain.PNG)",
               }}
             ></div>
             {/* END AVATAR IMAGE */}
@@ -20,7 +20,7 @@ const Home = () => {
           <div className="details">
             <h3 className="name">Ingyu Oh</h3>
             <p className="job">
-            PROFESSOR OF KANSAI GADAI UNIVERSITY
+            Professor of Sociology, Cultural Studies & Management at Kansai Gaidai University.
             </p>
             {/* END JOB */}
 

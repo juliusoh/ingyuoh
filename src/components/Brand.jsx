@@ -35,7 +35,7 @@ export default function SimpleSlider() {
 
         </li>
         <li className="item">
-        <a href="https://iwahs.org/" target="_blank" rel="noreferrer"><img src="assets/img/partners/asia.PNG" alt="partners brand" /></a>
+        <a href="https://iwahs.org/" target="_blank" rel="noreferrer"><img src="assets/img/partners/culture2.png" alt="partners brand" /></a>
 
         </li>
         <li className="item">
