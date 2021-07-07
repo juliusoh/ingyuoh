@@ -36,9 +36,6 @@ export default function SimpleSlider() {
         <img src="assets/img/slider/ingyu-about2.jpeg" alt="about" />
       </div>
       <div className="about_image">
-        <img src="assets/img/slider/ingyu4.png" alt="about" />
-      </div>
-      <div className="about_image">
         <img src="assets/img/slider/ingyu-about3.jpeg" alt="about" />
       </div>
     </Slider>
