@@ -8,6 +8,9 @@ import News from "../../components/News";
 import Contact from "../../components/Contact";
 
 const HomeLight = () => {
+  const refreshPage = () => {
+    window.location.reload();
+  }
   return (
     <>
       <Tabs>
@@ -16,7 +19,7 @@ const HomeLight = () => {
           <div className="leftpart">
             <div className="leftpart_inner">
               <div className="logo">
-                <Link className="navbar-brand" to="https://ingyuoh.com">
+                <Link className="navbar-brand" onClick={refreshPage}>
                   <img src="/assets/img/logo/ingyu.PNG" alt="brand" />
                 </Link>
               </div>
