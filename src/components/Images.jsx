@@ -16,13 +16,13 @@ export default function SimpleSlider() {
       {
         breakpoint: 991,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 1,
         },
       },
       {
         breakpoint: 576,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
         },
       },
     ],
