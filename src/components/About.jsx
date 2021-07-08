@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Modal from "react-modal";
 import Brand from "./Brand";
+import Images from "./Images"
 
 Modal.setAppElement("#root");
 
@@ -14,9 +15,7 @@ const About = () => {
   return (
     <>
       <div className="tokyo_tm_about">
-        <div className="about_image">
-          <img src="assets/img/slider/ingyu4.png" alt="about" />
-        </div>
+        <Images/>
         {/* END ABOUT IMAGE */}
         <div className="description">
           <h3 className="name">Ingyu Oh</h3>
