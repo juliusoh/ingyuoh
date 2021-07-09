@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Modal from "react-modal";
 import Brand from "./Brand";
 import Images from "./Images"
+import Pdf from './VITA.pdf';
 
 Modal.setAppElement("#root");
 
@@ -10,6 +11,10 @@ const About = () => {
 
   function toggleModal() {
     setIsOpen(!isOpen);
+  }
+
+  function toggleCv() {
+    window.open(Pdf)
   }
 
   return (
@@ -32,9 +37,10 @@ const About = () => {
                 </button>
               </div>
               <div className="tokyo_tm_button">
-              <a href="assets/VITA.pdf" className="ib-button" target="_blank">
-              Download Full CV
-              </a>
+              <button onClick={toggleCv} className="ib-button">
+              Download and View Full CV
+            </button>
+
 
             </div>
 
@@ -46,7 +52,7 @@ const About = () => {
           </div>
           {/* END DESCRIPTION INNER */}
         </div>
-        <div className="description"><h3 className="name">Links to my organizations</h3></div>
+        <div className="description"><h3 className="customName">Links to my organizations</h3></div>
 
         <Brand className="brandtop" />
       </div>

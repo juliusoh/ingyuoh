@@ -30,10 +30,10 @@ export default function SimpleSlider() {
   return (
     <Slider {...settings}>
       <div className="about_image">
-        <img src="assets/img/slider/ingyu1.jpeg" alt="about" />
+        <img src="assets/img/slider/ingyu1.jpeg" alt="about"  />
       </div>
       <div className="about_image">
-        <img src="assets/img/slider/ingyu-about2.jpeg" alt="about" />
+        <img src="assets/img/slider/ingyu-about2.jpeg" alt="about"  />
       </div>
       <div className="about_image">
         <img src="assets/img/slider/ingyu-about3.jpeg" alt="about" />

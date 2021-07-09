@@ -1,4 +1,4 @@
-import React from "react";
+import {React, useEffect} from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import { Link } from "react-router-dom";
 import Home from "../../components/Home";
@@ -11,6 +11,8 @@ const HomeLight = () => {
   const refreshPage = () => {
     window.location.reload();
   }
+
+
   return (
     <>
       <Tabs>
