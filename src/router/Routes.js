@@ -13,7 +13,6 @@ const Routes = () => {
          <Router>
             <Switch>
               <Route  exact path="/" component={HomeLight}/>
-
               <Route  component={NotFound}/>
             </Switch>
           </Router>

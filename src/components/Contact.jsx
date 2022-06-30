@@ -14,7 +14,7 @@ const Contact = () => {
   const onSubmit = (data, e) => {
     e.target.reset();
     console.log("Message submited: " + JSON.stringify(data));
-    sendForm('service_uf0oioq', 'template_wy9r96m', e.target, 'user_k6Xhy90e1z3YqtFluFmXu').then((result) => {
+    sendForm('service_qsftzaq', 'template_63sgcec', e.target).then((result) => {
 
       console.log(result);
     }, (error) => {
