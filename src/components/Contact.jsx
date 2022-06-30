@@ -27,7 +27,6 @@ const Contact = () => {
   const form = useRef();
 
   const onSubmit = (e) => {
-    e.preventDefault();
     console.log(e.target, "ALDSOAS");
     e.target.reset();
     const obj = (
