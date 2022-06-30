@@ -1,12 +1,8 @@
 import React, { useState } from "react";
 import Modal from "react-modal";
 import Brand from "./Brand";
-<<<<<<< HEAD
-import Images from "./Images"
-import Pdf from './VITA.pdf';
-=======
 import Images from "./Images";
->>>>>>> 50f07c5f7dff97d1b3cca8bbfb10079966181be2
+import Pdf from "./VITA.pdf";
 
 Modal.setAppElement("#root");
 
@@ -17,13 +13,11 @@ const About = () => {
     setIsOpen(!isOpen);
   }
 
-<<<<<<< HEAD
   function toggleCv() {
-    window.open(Pdf)
-=======
+    window.open(Pdf);
+  }
   function downloadCV() {
     window.open("https://ingyuoh-cv.s3.us-west-1.amazonaws.com/VITA.pdf", "_blank");
->>>>>>> 50f07c5f7dff97d1b3cca8bbfb10079966181be2
   }
 
   return (
@@ -57,15 +51,6 @@ const About = () => {
                 </button>
               </div>
               <div className="tokyo_tm_button">
-<<<<<<< HEAD
-              <button onClick={toggleCv} className="ib-button">
-              Download and View Full CV
-            </button>
-
-
-            </div>
-
-=======
                 <button className="ib-button" onClick={downloadCV}>
                   Download Full CV
                 </button>
@@ -73,7 +58,6 @@ const About = () => {
                   Download Full CV
                 </a> */}
               </div>
->>>>>>> 50f07c5f7dff97d1b3cca8bbfb10079966181be2
               {/* END TOKYO BUTTON */}
             </div>
             {/* END LEFT */}
@@ -82,13 +66,9 @@ const About = () => {
           </div>
           {/* END DESCRIPTION INNER */}
         </div>
-<<<<<<< HEAD
-        <div className="description"><h3 className="customName">Links to my organizations</h3></div>
-=======
         <div className="description" style={{ marginTop: "5px" }}>
           <h3 className="name">Links to my organizations</h3>
         </div>
->>>>>>> 50f07c5f7dff97d1b3cca8bbfb10079966181be2
 
         <Brand className="brandtop" />
       </div>
