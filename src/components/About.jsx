@@ -17,7 +17,7 @@ const About = () => {
     window.open(Pdf);
   }
   function downloadCV() {
-    window.open("https://ingyuoh-cv.s3.us-west-1.amazonaws.com/VITA.pdf", "_blank");
+    window.open("https://ingyuoh-cv.s3.us-west-1.amazonaws.com/VITA+(2).pdf", "_blank");
   }
 
   return (

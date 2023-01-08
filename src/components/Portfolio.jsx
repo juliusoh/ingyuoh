@@ -35,7 +35,7 @@ const Portfolio = () => {
                             rel="noreferrer"
                           >
                             <img
-                              src="https://d1b14unh5d6w7g.cloudfront.net/1032107553.01.S001.LXXXXXXX.jpg?Expires=1656649432&Signature=Y1WtaswJgC56ybPCCSSpef7HjVpyxJFvs3Vdm-HAAjxQ9RHhUrxbzs6sCJPbuVS3ySxqUVYN3SuGDP8lQR3517ZnWLlb7lzaE10nlBMKf1uVdZSM3dofJZvPOvb1wptZoZayUpSVXuRn~mx9Y4I-rhV-n564PMF3ltpQzZ5lHnU_&Key-Pair-Id=APKAIUO27P366FGALUMQ"
+                              src="https://m.media-amazon.com/images/P/1032107553.01._SCLZZZZZZZ_SX500_.jpg"
                               alt="Portfolio"
                             />
                           </a>
