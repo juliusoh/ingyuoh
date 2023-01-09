@@ -1,8 +1,8 @@
-import React from "react";
+import React, { useRef } from "react";
 import { useState } from "react";
 import ReactMapGL from "react-map-gl";
 import { useForm } from "react-hook-form";
-import { sendForm } from 'emailjs-com';
+import { sendForm } from "emailjs-com";
 
 const Contact = () => {
   const {
@@ -11,15 +11,45 @@ const Contact = () => {
     formState: { errors },
   } = useForm();
 
-  const onSubmit = (data, e) => {
-    e.target.reset();
-    console.log("Message submited: " + JSON.stringify(data));
-    sendForm('service_qsftzaq', 'template_63sgcec', e.target).then((result) => {
+  const templateParams = {
+    from_name: "",
+    from_email: "",
+    message: "",
+  };
 
-      console.log(result);
-    }, (error) => {
-      console.log(error.text);
-    })
+  const [toSend, setToSend] = useState({
+    from_name: "",
+    to_name: "",
+    message: "",
+    reply_to: "",
+  });
+
+  const form = useRef();
+
+  const onSubmit = (e) => {
+    console.log(e.target, "ALDSOAS");
+    e.target.reset();
+    const obj = (
+      <form class="contact_form">
+        <div className="first">
+          <input type="text" className="from_name" value={templateParams.from_name} />
+          <input type="text" className="from_email" value={templateParams.from_email} />
+          <textarea type="text" className="from_email" value={templateParams.message} />
+        </div>
+      </form>
+    );
+    sendForm("service_qsftzaq", "template_63sgcec", "#myForm", "1WYHVD1EiwivRn33t").then(
+      (result) => {
+        console.log(result);
+      },
+      (error) => {
+        console.log(error.text);
+      }
+    );
+  };
+
+  const handleChange = (e) => {
+    setToSend({ ...toSend, [e.target.name]: e.target.value });
   };
 
   const [viewport, setViewport] = useState({
@@ -54,7 +84,7 @@ const Contact = () => {
         {/* MENU WRAP */}
 
         <div className="fields">
-          <form className="contact_form" onSubmit={handleSubmit(onSubmit)}>
+          <form className="contact_form" ref={form} id="myForm" onSubmit={onSubmit}>
             <div className="first">
               <ul>
                 <li>
@@ -63,10 +93,10 @@ const Contact = () => {
                     type="text"
                     placeholder="Name"
                     name="from_name"
+                    value={toSend.from_name}
+                    onChange={handleChange}
                   />
-                  {errors.from_name && errors.from_name.type === "required" && (
-                    <span>Name is required</span>
-                  )}
+                  {errors.from_name && errors.from_name.type === "required" && <span>Name is required</span>}
                 </li>
                 {/* END FIRST NAME */}
 
@@ -86,17 +116,20 @@ const Contact = () => {
                     type="email"
                     placeholder="Email"
                     name="from_email"
+                    value={toSend.from_email}
+                    onChange={handleChange}
                   />
-                  {errors.from_email && (
-                    <span role="alert">{errors.from_email.message}</span>
-                  )}
+                  {errors.from_email && <span role="alert">{errors.from_email.message}</span>}
                 </li>
                 {/* END EMAIL */}
 
                 <li>
                   <textarea
                     {...register("message", { required: true })}
-                    placeholder="Message" name="message"
+                    placeholder="Message"
+                    name="message"
+                    value={toSend.message}
+                    onChange={handleChange}
                   ></textarea>
                   {errors.message && <span>Subject is required.</span>}
                 </li>
