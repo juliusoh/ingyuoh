@@ -1,13 +1,11 @@
-FROM node:14.5.0-alpine
+# We use an official Nginx image from Docker Hub as our base image
+FROM nginx:stable-alpine
 
-WORKDIR /usr/app
+# Copy the build folder from React to the root of Nginx (www)
+COPY build/ /usr/share/nginx/html
 
-COPY package.json .
+# We expose port 80 to outside world
+EXPOSE 80
 
-RUN npm install
-
-COPY . .
-
-EXPOSE 3000
-
-CMD ["npm", "start"]
+# Start Nginx when the container has provisioned.
+CMD ["nginx", "-g", "daemon off;"]
